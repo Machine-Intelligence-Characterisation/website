@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Machine Intelligence for Characterisation</title>
+  <meta name="description" content="Advancing machine intelligence for characterisation: microstructure analysis, predictive modelling, and automated classification.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%2309f%22/></svg>">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+
+<body>
+  <!-- ========== NAV ========== -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <div class="brand">
+        <img src="assets/MIC.png" width="32" height="32" alt="MIC logo" class="brand__logo" />
+        <span class="brand__name">Machine Intelligence for Characterisation</span>
+      </div>
+
+      <nav class="links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#data">Data</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main class="container">
+    <!-- Masthead -->
+    <section class="masthead" id="home">
+      <div class="masthead__grid">
+        <!-- LEFT: text -->
+        <div class="masthead__content">
+          <span class="tag">Open community • Materials AI</span>
+          <h1>Machine Intelligence for Characterisation</h1>
+          <p class="lead">
+            Advancing the understanding of microstructure through robust models, reproducible data and open tooling.
+          </p>
+          <div class="cta">
+            <a class="btn" href="#research">Explore Research</a>
+            <a class="btn btn--secondary" href="#data">View Datasets</a>
+          </div>
+        </div>
+
+        <!-- RIGHT: large logo image (no visible edge) -->
+        <div class="logo-art">
+          <img src="assets/MIC.png" alt="Abstract crystalline structure logo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Research Areas -->
+    <section id="research" aria-labelledby="research-title">
+      <h2 class="section-title" id="research-title">Key Research Areas</h2>
+
+      <div class="grid">
+        <article class="card">
+          <div class="card__thumb">
+            <img src="assets/microstructure_analysis.png" alt="Microstructure analysis imagery" />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Microstructure Analysis</h3>
+            <p class="muted">Segmentation, denoising and metrics for microscopy and diffraction.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__thumb">
+            <img src="assets/predictive_modelling.png" alt="Predictive modelling visualization" />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Predictive Modelling</h3>
+            <p class="muted">From descriptors to surrogates and uncertainty across scales.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__thumb">
+            <img src="assets/automated_classification.png" alt="Automated classification visualization" />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Automated Classification</h3>
+            <p class="muted">Self-supervised and active learning for domain-specific labelling.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Featured Data & Insights -->
+    <section id="data" aria-labelledby="data-title">
+      <h2 class="section-title" id="data-title">Featured Data &amp; Insights</h2>
+
+      <div class="two-col">
+        <div class="panel">
+          <h4>Efficient material property prediction</h4>
+          <div class="chart" role="img" aria-label="Example line chart">
+            <svg viewBox="0 0 600 260" preserveAspectRatio="none">
+              <polyline fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1" points="0,220 600,220" />
+              <polyline fill="none" stroke="rgba(26,124,255,.9)" stroke-width="3"
+                        points="0,200 60,190 120,195 180,175 240,180 300,150 360,160 420,135 480,140 540,110 600,105"/>
+            </svg>
+          </div>
+          <p class="muted tiny">Ablation across datasets; see the full analytics portal for metrics and protocol.</p>
+        </div>
+
+        <div class="panel">
+          <h4>Future-mode Analytics</h4>
+          <div class="chart" role="img" aria-label="Example line chart">
+            <svg viewBox="0 0 600 260" preserveAspectRatio="none">
+              <polyline fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1" points="0,220 600,220" />
+              <polyline fill="none" stroke="rgba(28,155,216,.9)" stroke-width="3"
+                        points="0,205 60,206 120,200 180,198 240,192 300,186 360,175 420,162 480,150 540,138 600,126"/>
+            </svg>
+          </div>
+          <p class="muted tiny">Live pipelines (coming soon): experiment tracking and dataset health.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="container">
+    <div class="foot">
+      <span class="tiny">© <span id="y"></span> Machine Intelligence Characterisation</span>
+      <span class="tiny">
+        <a href="#about">About</a> ·
+        <a href="#publications">Publications</a> ·
+        <a href="#contact">Contact</a>
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
